@@ -90,20 +90,7 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
-                            Universal sound separation faces a fundamental misalignment: models optimized for low-level
-                            signal metrics often produce semantically contaminated outputs, failing to suppress
-                            perceptually salient interference from acoustically similar sources. We introduce a
-                            preference alignment perspective, analogous to the alignment of Large Language Models (LLMs)
-                            with human intent. To bridge this gap, we introduce MARS-Sep, a reinforcement learning
-                            framework that explicitly reformulates separation as an alignment problem. Instead of simply
-                            regressing ground-truth masks, MARS-Sep learns a factorized Beta mask policy that is steered
-                            by a preference reward model and optimized by a stable, clipped trust-region surrogate. The
-                            reward, derived from a progressively-aligned audio-text-vision encoder, directly
-                            incentivizes semantic consistency with query prompts. Extensive experiments on multiple
-                            benchmarks demonstrate consistent gains in Text-, Audio-, Image-, and Omni-Queried
-                            separation, with notable improvements in signal metrics and semantic quality. Our code is
-                            available at https://anonymous.4open.science/r/MARS-Sep. Sound separation samples are
-                            available at https://mars-sep.github.io/.
+                            Universal sound separation faces a fundamental misalignment: models optimized for low-level signal metrics often produce semantically contaminated outputs, failing to suppress perceptually salient interference from acoustically similar sources. We introduce a preference alignment perspective, analogous to aligning LLMs with human intent. To address this, we introduce MARS-Sep, a reinforcement learning framework that reformulates separation as decision making. Instead of simply regressing ground-truth masks, MARS-Sep learns a factorized Beta mask policy that is steered by a preference reward model and optimized by a stable, clipped trust-region surrogate. The reward, derived from a progressively-aligned audio-text-vision encoder, directly incentivizes semantic consistency with query prompts. Extensive experiments on multiple benchmarks demonstrate consistent gains in Text-, Audio-, and Image-Queried separation, with notable improvements in signal metrics and semantic quality. Our code is available at https://anonymous.4open.science/r/MARS-Sep. Sound separation samples are available at https://mars-sep.github.io/.
                     </div>
                     <!--/ Abstract. -->
                 </div>
@@ -1135,7 +1122,7 @@
                                     您的浏览器不支持 video 标签。
                                 </video>
                             </td>
-                            <td><p>motorcycle running</p></td>
+                            <td><p>elephant trumpeting</p></td>
                             <td>
                                 <audio src="res/in_the_wild/elephant/tqss.wav" controls></audio>
                             </td>
